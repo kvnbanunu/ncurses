@@ -11,8 +11,8 @@ static char *map;
 
 void setup(int w, int h)
 {
-    width = w;
-    height = h;
+    width = w + 1;
+    height = h + 1;
     map = (char *)calloc(width * height, sizeof(char));
     srand((unsigned)time(NULL));
     int num_bombs = (height * width) / 10;
