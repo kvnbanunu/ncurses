@@ -33,6 +33,10 @@ int main()
     box(w2, 0, 0);
     box(w3, 0, 0);
 
+    mvwaddch(w1, 5, 1, '@' | COLOR_PAIR(2));
+    mvwaddch(w1, 4, 1, '@' | COLOR_PAIR(2));
+    mvwaddch(w1, 3, 1, '@' | COLOR_PAIR(2));
+    mvwaddch(w1, 2, 1, '@' | COLOR_PAIR(2));
     mvwaddch(w1, 1, 1, '@' | COLOR_PAIR(2));
     mvwaddstr(w2, 1, 1, "Level 1");
     mvwaddstr(w3, 1, 1, "Evin Died");
@@ -41,6 +45,16 @@ int main()
     wrefresh(w1);
     wrefresh(w2);
     wrefresh(w3);
+
+    getch();
+
+    wclear(w1);
+
+    mvwaddch(w1, 1, 1, '@' | COLOR_PAIR(1));
+    wrefresh(w1);
+
+
+
 
     getch();
     delwin(w1);

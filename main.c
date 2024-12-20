@@ -26,7 +26,7 @@ int main(void)
 
     refresh();
 
-    setup(50, 20);
+    setup(64, 32);
     play();
 
     getch();
